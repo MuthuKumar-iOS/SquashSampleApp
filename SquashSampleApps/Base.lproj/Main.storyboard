@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="HomeViewController" customModule="SquashSampleApps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qu5-xu-Pyo">
+                                <rect key="frame" x="0.0" y="30" width="414" height="54"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zs-9o-TFp">
+                                        <rect key="frame" x="316" y="5.5" width="83" height="43"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Menu icon" translatesAutoresizingMaskIntoConstraints="NO" id="2xo-Xa-8xd">
+                                                <rect key="frame" x="0.0" y="2" width="83" height="38.5"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Um-ZD-rpZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="83" height="43"/>
+                                                <connections>
+                                                    <action selector="menuBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sdc-Xw-AST"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="2Um-ZD-rpZ" firstAttribute="centerY" secondItem="3zs-9o-TFp" secondAttribute="centerY" id="B6U-pz-Ktn"/>
+                                            <constraint firstItem="2xo-Xa-8xd" firstAttribute="centerX" secondItem="3zs-9o-TFp" secondAttribute="centerX" id="LZ9-wz-rhR"/>
+                                            <constraint firstItem="2xo-Xa-8xd" firstAttribute="width" secondItem="3zs-9o-TFp" secondAttribute="width" id="TGv-iA-zh7"/>
+                                            <constraint firstItem="2Um-ZD-rpZ" firstAttribute="width" secondItem="3zs-9o-TFp" secondAttribute="width" id="ce7-YO-UFc"/>
+                                            <constraint firstItem="2xo-Xa-8xd" firstAttribute="height" secondItem="3zs-9o-TFp" secondAttribute="height" multiplier="0.9" id="dwF-gv-Z8v"/>
+                                            <constraint firstItem="2Um-ZD-rpZ" firstAttribute="centerX" secondItem="3zs-9o-TFp" secondAttribute="centerX" id="jeQ-fp-eoE"/>
+                                            <constraint firstItem="2Um-ZD-rpZ" firstAttribute="height" secondItem="3zs-9o-TFp" secondAttribute="height" id="kOl-fR-iLI"/>
+                                            <constraint firstItem="2xo-Xa-8xd" firstAttribute="centerY" secondItem="3zs-9o-TFp" secondAttribute="centerY" id="psc-Fr-iCa"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yds-o3-bYL">
+                                        <rect key="frame" x="10" y="8" width="62" height="37.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow icon" translatesAutoresizingMaskIntoConstraints="NO" id="d43-zL-INS">
+                                                <rect key="frame" x="12.5" y="7.5" width="37" height="22.5"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nOA-5l-iUp">
+                                                <rect key="frame" x="0.0" y="0.0" width="62" height="37.5"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="d43-zL-INS" firstAttribute="centerY" secondItem="Yds-o3-bYL" secondAttribute="centerY" id="4tg-RC-Vdb"/>
+                                            <constraint firstItem="nOA-5l-iUp" firstAttribute="centerY" secondItem="Yds-o3-bYL" secondAttribute="centerY" id="OTt-Nu-LzC"/>
+                                            <constraint firstItem="nOA-5l-iUp" firstAttribute="height" secondItem="Yds-o3-bYL" secondAttribute="height" id="Pfu-LS-y69"/>
+                                            <constraint firstItem="d43-zL-INS" firstAttribute="height" secondItem="Yds-o3-bYL" secondAttribute="height" multiplier="0.6" id="PrF-zS-b1p"/>
+                                            <constraint firstItem="d43-zL-INS" firstAttribute="width" secondItem="Yds-o3-bYL" secondAttribute="width" multiplier="0.6" id="TWT-ma-t8m"/>
+                                            <constraint firstItem="d43-zL-INS" firstAttribute="centerX" secondItem="Yds-o3-bYL" secondAttribute="centerX" id="Vyd-w6-1zm"/>
+                                            <constraint firstItem="nOA-5l-iUp" firstAttribute="centerX" secondItem="Yds-o3-bYL" secondAttribute="centerX" id="j4I-hr-YEG"/>
+                                            <constraint firstItem="nOA-5l-iUp" firstAttribute="width" secondItem="Yds-o3-bYL" secondAttribute="width" id="qA2-xm-HAJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Yds-o3-bYL" firstAttribute="width" secondItem="Qu5-xu-Pyo" secondAttribute="width" multiplier="0.15" id="7yQ-7e-JNk"/>
+                                    <constraint firstAttribute="trailing" secondItem="3zs-9o-TFp" secondAttribute="trailing" constant="15" id="DaM-bS-p9g"/>
+                                    <constraint firstItem="3zs-9o-TFp" firstAttribute="centerY" secondItem="Qu5-xu-Pyo" secondAttribute="centerY" id="Uux-gP-5ID"/>
+                                    <constraint firstItem="Yds-o3-bYL" firstAttribute="centerY" secondItem="Qu5-xu-Pyo" secondAttribute="centerY" id="Vds-jV-Ecd"/>
+                                    <constraint firstItem="Yds-o3-bYL" firstAttribute="leading" secondItem="Qu5-xu-Pyo" secondAttribute="leading" constant="10" id="YOD-Ej-voK"/>
+                                    <constraint firstItem="3zs-9o-TFp" firstAttribute="width" secondItem="Qu5-xu-Pyo" secondAttribute="width" multiplier="0.2" id="cSM-Il-b48"/>
+                                    <constraint firstItem="Yds-o3-bYL" firstAttribute="height" secondItem="Qu5-xu-Pyo" secondAttribute="height" multiplier="0.7" id="xo6-5g-wgd"/>
+                                    <constraint firstItem="3zs-9o-TFp" firstAttribute="height" secondItem="Qu5-xu-Pyo" secondAttribute="height" multiplier="0.8" id="zJL-rB-86c"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="anw-za-35t">
+                                <rect key="frame" x="0.0" y="94" width="414" height="758"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NJ7-4D-sf0">
+                                    <size key="itemSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="lk4-Pv-Qk6"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="8De-oS-Mx2"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="51b-aD-rhK">
+                                <rect key="frame" x="300.5" y="89" width="103.5" height="134"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zh3-IR-krd">
+                                        <rect key="frame" x="0.0" y="13" width="103.5" height="107.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="BYZ-38-t0r" id="nOg-a7-HQI"/>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="a0G-Xe-klj"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="zh3-IR-krd" firstAttribute="height" secondItem="51b-aD-rhK" secondAttribute="height" multiplier="0.8" id="0RH-pb-pbO"/>
+                                    <constraint firstItem="zh3-IR-krd" firstAttribute="centerX" secondItem="51b-aD-rhK" secondAttribute="centerX" id="6lO-Kf-UBx"/>
+                                    <constraint firstItem="zh3-IR-krd" firstAttribute="centerY" secondItem="51b-aD-rhK" secondAttribute="centerY" id="VUs-XZ-rko"/>
+                                    <constraint firstItem="zh3-IR-krd" firstAttribute="width" secondItem="51b-aD-rhK" secondAttribute="width" id="t80-4Q-27g"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="anw-za-35t" firstAttribute="top" secondItem="Qu5-xu-Pyo" secondAttribute="bottom" constant="10" id="6FL-9j-LsW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="anw-za-35t" secondAttribute="bottom" constant="10" id="Ddl-jl-0b1"/>
+                            <constraint firstItem="Qu5-xu-Pyo" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="GZg-Hb-oZk"/>
+                            <constraint firstItem="Qu5-xu-Pyo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NJR-mc-z8g"/>
+                            <constraint firstItem="Qu5-xu-Pyo" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.06" id="Yqc-5F-8pw"/>
+                            <constraint firstItem="anw-za-35t" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bpl-SP-kGM"/>
+                            <constraint firstItem="51b-aD-rhK" firstAttribute="top" secondItem="Qu5-xu-Pyo" secondAttribute="bottom" constant="5" id="cva-sJ-R7O"/>
+                            <constraint firstItem="51b-aD-rhK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.25" id="euU-Dv-f2K"/>
+                            <constraint firstItem="Qu5-xu-Pyo" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="hzn-Bd-SNw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="51b-aD-rhK" secondAttribute="trailing" constant="10" id="q6j-qX-BW3"/>
+                            <constraint firstItem="anw-za-35t" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="s2d-uk-vvW"/>
+                            <constraint firstItem="51b-aD-rhK" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="tbW-q1-fQ4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="homeCollectionView" destination="anw-za-35t" id="jbT-DT-DEA"/>
+                        <outlet property="menuTable" destination="zh3-IR-krd" id="uhB-Mq-pBo"/>
+                        <outlet property="menuView" destination="51b-aD-rhK" id="h75-RU-qQ1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="113"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Arrow icon" width="512" height="512"/>
+        <image name="Menu icon" width="512" height="512"/>
+    </resources>
+</document>
